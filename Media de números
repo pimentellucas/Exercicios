@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int n, ni, temp;
+float soma;
+
+soma = 0;
+
+
+printf("Entre com a quantidade de numeros que se deseja a media\n");
+scanf("%d", &n);
+
+ni = n;
+
+while (n > 0)
+        {   printf("Entre com um numero\n");
+            scanf("%d", &temp);
+            soma = soma + temp;
+            n = n-1;
+}
+    soma = soma / ni;
+
+printf ("media = %f", soma);
+return 0;
+}
