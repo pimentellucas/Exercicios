@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int cmod, n, cont;
+
+cmod = 0;
+printf("Digite o numero limite\n");
+scanf( "%d", &n);
+n = n+1;
+cont = 1;
+
+while (cont == 1){
+    if (cmod == n){
+      	cmod = 0;
+}
+
+printf("%d\n", cmod);
+cmod = cmod+1;
+printf("quer continuar ?\n");
+printf("Digite 1 para sim\n");
+scanf( "%d", &cont);
+}
+printf("Fim\n");
+
+    return 0;
