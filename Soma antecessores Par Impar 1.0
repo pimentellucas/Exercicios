@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+int num, num2, si, sp, soma, soma2;
+
+printf("Esse programa soma os antecessores pares e os antecessores impares\n") ;
+printf("Entre com o numero desejado\n" );
+scanf("%d", &num);
+num2 = num - 1;
+si = 1;
+sp = 0;
+soma = 0;
+soma2 = 0;
+
+        while(num > 1){
+            soma = soma + num;
+            num = num - 2;}
+                if(num == 1){
+                    num = 0;
+                    si = si + soma;}
+                else
+                    sp = soma;
+
+        while(num2 > 1){
+            soma2 = soma2 + num2;
+            num2 = num2 - 2;}
+            if(num2 == 1){
+                    num2 = 0;
+                    si = si + soma2;}
+                else
+                    sp = soma2;
+
+printf("soma dos antecessores impares= '%d' \n", si);
+printf("soma dos antecessores pares= %d \n", sp );
+return 0; }
