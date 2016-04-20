@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+int teste;
+double result,numero,dividendo;
+
+    printf("Entre com o numero que se deseja os divisores:\n");
+    scanf("%lf", &numero);
+
+    dividendo = numero;
+
+    printf("Os divisores sao:\n");
+
+while(dividendo > 0){
+    result = numero / dividendo;
+    teste = result;
+            if(teste == result){
+                    printf("%d\n", teste);
+
+        }
+    dividendo = dividendo - 1;
+    }
+return 0;
+}
