@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int numero;
+    int soma;
+
+           printf("Esse programa soma os numero naturais de 0 a N\n");
+           printf("Digite o numero que se deseja somar seus antecessores: \n");
+                scanf("%d",&numero);
+    soma = 0;
+
+            while( numero > 0){
+                soma = soma + numero;
+                numero = numero-1;}
+
+            printf("soma= %d", soma);
+
+return 0;
+}
