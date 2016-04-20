@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+int valores[49],vg,vp,n;;
+
+n = 0;
+
+while (n<50){
+    printf ("Entre com os 50 valores\n");
+    scanf("%d", &valores[n]);
+    n= n+1;
+}
+
+n = 0;
+vg = valores[0];
+vp = vg;
+
+while (n<50){
+    if (valores[n]>vg){
+        vg = valores[n];}
+        else
+            if (valores[n]<vp){
+                vp = valores[n];}
+n = n+1;
+}
+
+printf("O maior numero: %d\nO menor numero: %d\n", vg,vp);
+
+return 0;
+}
