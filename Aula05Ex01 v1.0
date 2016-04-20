@@ -12,9 +12,7 @@ n = n+1;
 cont = 1;
 
 while (cont == 1){
-    if (cmod == n){
-      	cmod = 0;
-}
+    cmod = (cmod < n-1) ? cmod : 0;
 
 printf("%d\n", cmod);
 cmod = cmod+1;
@@ -25,3 +23,4 @@ scanf( "%d", &cont);
 printf("Fim\n");
 
     return 0;
+}
