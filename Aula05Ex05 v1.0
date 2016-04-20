@@ -3,12 +3,12 @@
 
 int main(){
 
-int teste;
+int teste,qntd;
 double result,numero,dividendo;
 
+qntd = 0;
     printf("Entre com o numero que se deseja os divisores:\n");
     scanf("%lf", &numero);
-
     dividendo = numero;
 
     printf("Os divisores sao:\n");
@@ -18,9 +18,10 @@ while(dividendo > 0){
     teste = result;
             if(teste == result){
                     printf("%d\n", teste);
-
+                    qntd = qntd + 1;
         }
     dividendo = dividendo - 1;
     }
+printf("O numero %.0lf possue %d divisores inteiros",numero, qntd);
 return 0;
 }
