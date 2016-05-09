@@ -1,0 +1,15 @@
+define-se um numero natural(N)
+copia o antecessor do numero N para outra variavel "numero2"
+*subtraindo de dois em dois, sempre se pega um numero na mesma paridade do anterior
+
+enquanto numero > 1
+soma1 recebe numero1
+subtrai 2 do numero1
+se no final sobrar 1, o numero é impar então soma1 é a soma dos antecessesores impares de N
+se no final sobrar 0, o numero pé par e a soma1 é a soma dos antecessores pares de N
+
+enquanto numero2 > 1
+soma2 recebe numero2
+subtrai 2 do numero2
+se no final sobrar 1, o numero2 é impar então soma2 é a soma dos antecessesores impares de N
+se no final sobrar 0, o numero2 é par e a soma2 é a soma dos antecessores pares N
