@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+ double soma, n, n2;
+ soma = 0;
+ n = 0;
+ n2 = 1;
+ while(n < 50){
+    soma = soma + 1 + (n/n2);
+    n = n + 1;
+    n2 = n2 + 1;
+}
+printf("a soma e %lf", soma);
+return 0;
+}
