@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+int v,vg,vp;
+
+printf("Entre com os valores e entre com -1 para encerrar a entrada\n");
+    printf ("Entre com o valor\n");
+    scanf("%d", &v);
+        vg = v;
+        vp = v;
+
+
+    while(v!= -1){printf ("Entre com o valor\n");
+    scanf("%d", &v);
+        if (v>vg){
+        vg = v;
+        }
+            else
+                if (v!=-1 && v<vp){
+                vp = v;
+            }
+    }
+
+    if(vp == -1 && vg == -1){
+        printf("nao existe valor");
+        return 0;
+    }
+printf("O maior numero: %d\nO menor numero: %d\n", vg,vp);
+
+return 0;
+}
