@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+    double hn,soma;
+soma = 0;
+
+printf("somar ate o termo:\n1/");
+scanf("%lf", &hn);
+
+    while(hn > 0){
+        soma = soma + (1/hn);
+        hn = hn - 1;
+    }
+printf("\na soma e %lf", soma);
+return 0;
+}
