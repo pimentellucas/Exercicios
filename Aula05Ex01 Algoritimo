@@ -1,0 +1,13 @@
+define-se um numero limite(N)
+
+contador inicia com 0
+
+
+se o contador = N-1
+imprime na tela o valor do contador e incrementa o contador
+se o contador > N-1
+reseta o contador para 0
+imprime o valor na tela
+
+pergunta se quer continuar
+se sim, repete o processo
