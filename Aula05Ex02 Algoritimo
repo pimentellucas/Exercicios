@@ -1,0 +1,5 @@
+define-se um numero natural(N)
+
+enquanto numero > 0
+soma recebe o numero
+subtrai 1 do numero
