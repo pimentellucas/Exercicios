@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+
+ int sn;
+ double soma, n, n2;
+
+
+ soma = 0;
+ n = 0;
+ n2 = 1;
+ printf("entre com o termo n ate o qual se deseja a soma da serie:\n1 + n/n+1\n");
+ scanf("%d", &sn);
+
+ while(n < sn+1){
+    soma = soma + 1 + (n/n2);
+    n = n + 1;
+    n2 = n2 + 1;
+}
+printf("\na soma e %lf", soma);
+return 0;
+}
