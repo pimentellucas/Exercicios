@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+int v[5]={2,56,14,7,98};
+int n;
+double soma, media;
+
+n = 0;
+soma = 0;
+media = 0;
+
+    for(n=0 ; n < 5 ; n++){
+       soma = soma + v[n];
+    }
+media = soma/5;
+
+printf("a media e %.2lf", media);
+return 0;
+}
