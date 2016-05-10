@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+int v[10]={0};
+int n,nt;
+n = 0;
+nt = 0;
+
+for(n=0 ; n < 10 ; n++){
+    printf("entre com um numero\n");
+    scanf("%d", &v[n]);
+        for(nt=10 ; nt > 1 ; nt--){
+            if(v[nt] == v[n]){
+            printf("numero ja digitado, entre com outro valor\n");
+            n = n-1;
+        }
+    }
+}
+
+
+return 0;
+}
