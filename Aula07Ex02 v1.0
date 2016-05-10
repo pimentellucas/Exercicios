@@ -5,7 +5,7 @@
 int main (){
 
 int aln;
-aln = 10;
+aln = 100;
 
 int nota[aln],n;
 double media,soma;
