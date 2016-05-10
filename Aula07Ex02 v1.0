@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+
+int aln;
+aln = 10;
+
+int nota[aln],n;
+double media,soma;
+
+n = 0;
+media = 0;
+soma = 0;
+
+    while(n<aln){
+        printf("entre com a nota do aluno %d \n", n+1);
+        scanf("%d", &nota[n]);
+        n = n+1;
+    }
+n = 0;
+    while(n<aln){
+    soma = soma + nota[n];
+    n = n+1;
+    }
+
+media = soma/aln;
+
+n = 0;
+
+    while(n < aln){
+        if(nota[n] < media){
+            printf("O aluno %d tirou nota %d que esta abaixo da media da turma que foi %.2lf\n", n+1, nota[n],media);
+            n = n+1;
+        }
+        else
+            n = n+1;
+    }
+return 0;
+}
