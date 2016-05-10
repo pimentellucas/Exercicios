@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+int notas[100],n;
+n = 0;
+    while(n<100){
+        printf("entre com a nota do aluno %d \n", n+1);
+        scanf("%d", &notas[n]);
+        n = n+1;
+    }
+return 0;
+}
