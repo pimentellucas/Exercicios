@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main (){
+
+double a,b,c,d,l1,l2,l3;
+d = 0;
+l1 = 0;
+l2 = 0;
+l3 = 0;
+
+printf("entre com o primeiro lado do paralelepipedo\n");
+scanf("%lf", &a);
+printf("entre com o segundo lado do paralelepipedo\n");
+scanf("%lf",&b);
+printf("entre com o terceiro lado do paralelepipedo\n");
+scanf("%lf",&c);
+
+l1 = sqrt((a*a)+(b*b));
+l2 = sqrt((b*b)+(c*c));
+l3 = sqrt((a*a)+(c*c));
+d = sqrt((l1*l1)+(c*c));
+
+printf("A diangonal principal mede: %.2lf\nA diagonal relativa ao lado a b mede: %.2lf\n",d,l1);
+printf("A diagonal relativa ao lado b c mede: %.2lf\nA diagonal relativa ao lado a c mede: %.2lf\n",l2,l3);
+return 0;
+}
