@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+int v[100],valor,n;
+n = 0;
+
+printf("entre com o valor que se deseja procurar\n");
+scanf("%d", &valor);
+    while(n<100){
+        if (v[n] == valor){
+            printf("a posição %d contem o valor %d", n+1, valor);
+            n = n+1;
+        }
+        else
+            n = n+1;
+    }
+
+return 0;
+}
