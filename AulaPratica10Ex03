@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+int v[100],n,max,min,posmax,posmin;
+n = 0;
+posmax = 1;
+posmin = 1;
+
+printf("entre com o valor");
+scanf("%d", &v[n]);
+max = v[0];
+min = max;
+
+for(n = 1; n<100 ; n++){
+    printf("entre com o valor");
+    scanf("%d", &v[n]);
+    if(v[n]>max){
+        max = v[n];
+        posmax = n+1;
+    }
+    else
+        if(v[n]<min){
+            min = v[n];
+            posmin = n+1;
+        }
+printf(" o maior valor foi %d, na posição %d\no menor valor foi %d, na posição %d", max, posmax, min, posmin);
+
+}
+return 0;
+}
