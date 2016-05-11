@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+double a,b,c,max,min;
+
+printf("entre com o primeiro valor\n");
+scanf("%lf", &a);
+max = a;
+min = a;
+printf("\nentre com o segundo valor\n");
+scanf("%lf", &b);
+    if(b>max){
+        max = b;
+    }
+    else
+        if(b<min){
+            min = b;
+        }
+printf("\nentre com o terceiro valor\n");
+scanf("%lf", &c);
+    if(c>max){
+        max = c;
+    }
+    else
+        if(c<min){
+            min = c;
+        }
+printf("o maior numero e;%lf\no menor numero e:%lf", max,min);
+return 0;
+}
