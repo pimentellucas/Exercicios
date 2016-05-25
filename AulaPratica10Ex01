@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void troca(int a, int b){
-    int c;
-    int *pa,*pb;
-    pa = &a;
-    pb = &b;
-        c = a;
-        *pa = b;
-        *pb = c;
+void troca(int *a, int *b) {
+  int c;
+  c = *a;
+  *a = *b;
+  *b = c;
 }
 
 int main(){
@@ -17,7 +14,7 @@ int num1,num2;
 num1 = 2;
 num2 = 5;
 
-troca(num1,num2);
+troca(&num1,&num2);
 
 printf("numero 1 e: %d\nnumero 2 e: %d", num1, num2);
 return 0;
