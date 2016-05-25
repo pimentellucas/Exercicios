@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void smpar(int *i, int *somaparcial,int *v) {
+    int j;
+    *somaparcial = 0;
+    for(j=0; j<=*i ; j++){
+        *somaparcial = *somaparcial + v[j];
+    }
+ }
+
+int main(){
+int a[]={25,4,10,30,20,1,3,5,6};
+int i,a2[9],somaparcial;
+
+for (i=0 ; i<9 ; i++){
+    smpar(&i, &somaparcial, a);
+    a2[i] = somaparcial;
+}
+for (i=0 ; i<9 ; i++){
+    printf("posicao %d e:%d\n",i+1, a2[i]);
+}
+return 0;
+}
