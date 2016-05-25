@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+//resultados em double
+//hipotenusas sqrt((x1-x2)² + ((y1-y2)²))
+void calcdist() 
 
 int main(){
 int par[300][2];
