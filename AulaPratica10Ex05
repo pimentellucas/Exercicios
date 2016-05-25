@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+int par[300][2];
+int i, j;
+
+for(i=0 ; i<300 ; i++){
+    for(j=0 ; j<2 ; j++){
+        if(j==0){
+            printf("entre com a cordenada x do ponto\n");
+            scanf("%d", &par[i][j]);
+        }
+        if(j==1){
+            printf("entre com a cordenada y do ponto\n");
+            scanf("%d", &par[i][j]);
+            printf("\n\n");
+        }
+    }
+}
+return 0;
+}
