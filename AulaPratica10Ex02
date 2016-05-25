@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void teste(double *max, double *min, double *numero) {
+    if(*numero>*max){
+        *max = *numero;
+    }
+    else
+        if(*numero < *min){
+            *min = *numero;
+}
+}
 int main(){
 double a,b,c,max,min;
 
@@ -8,24 +17,15 @@ printf("entre com o primeiro valor\n");
 scanf("%lf", &a);
 max = a;
 min = a;
+
 printf("\nentre com o segundo valor\n");
 scanf("%lf", &b);
-    if(b>max){
-        max = b;
-    }
-    else
-        if(b<min){
-            min = b;
-        }
+teste(&max,&min,&b);
+
 printf("\nentre com o terceiro valor\n");
 scanf("%lf", &c);
-    if(c>max){
-        max = c;
-    }
-    else
-        if(c<min){
-            min = c;
-        }
+teste(&max,&min,&c);
+
 printf("o maior numero e;%lf\no menor numero e:%lf", max,min);
 return 0;
 }
